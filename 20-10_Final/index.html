@@ -1,0 +1,44 @@
+<!DOCTYPE html> 
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chúc mừng 20/10 💐</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="flower.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Màn hình click mở đầu -->
+  <div id="start-screen" class="screen active">
+    <div class="click-area" id="click-area">
+      <h1 class="click-text">💖 Chạm để bắt đầu 💖</h1>
+    </div>
+  </div>
+
+  <!-- Form nhập tên -->
+  <div id="name-screen" class="screen">
+    <div class="name-container">
+      <h2>Nhập tên 🎁</h2>
+      <input type="text" id="nameInput" placeholder="Nhập tên ở đây...">
+      <button id="submitName">Gửi</button>
+    </div>
+  </div>
+
+  <!-- Lời chúc -->
+  <div id="wish-screen" class="screen">
+    <div class="wish-text" id="wishText"></div>
+  </div>
+
+  <!-- ✅ Thay phần hoa mọc bằng iframe để hiển thị trang hoa riêng -->
+  <div id="flower-container" class="screen" style="display:none;">
+    <iframe src="flower.html" id="flower-frame" frameborder="0" width="100%" height="100%" scrolling="no"></iframe>
+  </div>
+
+  <!-- ✅ Thêm thẻ nhạc duy nhất -->
+  <audio id="bgMusic" src="music/piano.mp3" loop></audio>
+
+  <script src="main.js"></script>
+</body>
+</html>
